@@ -2,14 +2,14 @@
 include("Database.php");
 
 $host = "localhost";
-$dbuser= "root";
-$dbpasswd = "";
+$dbuser= "w95862lu_db";
+$dbpasswd = "myPASS123";
 $dbname= "w95862lu_db";
 $table = 'Tickets';
 
 $db = new Database($host,$dbuser,$dbpasswd, $dbname);
 
-$data = ['customerName'=>'Rus', 'email'=>'dsf@ds.ru', 'mobNumber'=>'6765764', 'birthDate'=>'1995-01-01', 'carBrand'=>'audi'];
+$data = ['customerName'=>'Rus', 'email'=>'dsf@ds.ru', 'mobNumber'=>'89467546623', 'birthDate'=>'1995-01-01', 'carBrand'=>'audi'];
 echo $db->insert($table , $data);
 
 
