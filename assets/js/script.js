@@ -156,12 +156,29 @@ function validate_mob(){
 
 function validate_bday(){
     var valid = true;
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth()+1;
+    var yyyy = today.getFullYear();
+    if(dd<10){
+        dd='0'+dd
+    } 
+    if(mm<10){
+        mm='0'+mm
+    } 
+    today = yyyy+'-'+mm+'-'+dd;
     var bday_error = document.getElementById('bday_error');
     if (oForm.bday.value === ""){
         bday_error.innerHTML = "поле должно быть заполнено";
         oForm.bday.style.borderColor = 'red';
         valid = false;
     }
+    else if (oForm.bday.value > today){
+        bday_error.innerHTML = "Не корректная дата";
+        oForm.bday.style.borderColor = 'red';
+        valid = false; 
+    }
+
     else{
         bday_error.innerHTML = "";
         oForm.bday.style.borderColor = '#b490ca';
@@ -194,4 +211,4 @@ var yyyy = today.getFullYear();
         mm='0'+mm
     } 
 today = yyyy+'-'+mm+'-'+dd;
-document.getElementById("bday").setAttribute("max", today);
+document.getElementById('bday').setAttribute("max", today);

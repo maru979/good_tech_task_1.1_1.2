@@ -15,7 +15,7 @@ echo $db->insert($table , $data);
 
 $fields_data = ['email'=>'updated@email.com'];
 $where_condition = ['id'=>'72'];
-echo $db->update($table, $fields_data, $where_condition);
+echo $db->update($table, $fields_data, $giwhere_condition);
 
 $where_condition = ['id'=>'48'];
 echo $db->delete($table, $where_condition);
