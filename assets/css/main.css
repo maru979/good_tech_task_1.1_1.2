@@ -1,0 +1,146 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: 1rem;
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #0275D8;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  color: #d3d0d0;
+}
+
+label, caption{
+  color: rgb(2,0,36);
+  margin-bottom: 15px;
+}
+input, select{
+  border-radius: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 20px;
+  width: 170px;
+  border:1px solid #b490ca;
+}
+input[type=date]{
+  padding-right: 0px;
+  width: 180px;
+  height: 23px;
+}
+select{
+  width: 192px;
+  height: 23px;
+}
+button{
+  color: #60E4DE;
+  width: 90px;
+  border: none;
+  height: 23px;
+  background-color: rgb(23, 135, 255);
+  border-radius: 3px;
+}
+button:hover {
+  background-color: rgb(0, 108, 224);
+}
+  body{
+    background: rgb(2,0,36);
+    background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+  }
+  
+#main{
+  border-radius: 5px;
+  background: white;
+  padding: 10px;
+  display: table;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+#mainTable{
+  border-radius: 5px;
+  background: white;
+  padding: 10px;
+  display: table;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.errorMsg{
+  font-size: 0.7rem;
+  color: #ff6060;
+  margin-bottom: 10px;
+}
+
+#customTable {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 5px;
+}
+
+#customTable th, 
+#customTable td{
+  border-bottom: 1px solid #ddd;
+}
+
+#customTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customTable th, 
+#customTable td {
+  text-align: left;
+  padding: 8px;
+}
+
+#customTable tr:nth-child(even){background-color: #f2f2f2}
+
+#customTable th {
+  background-color: #0275D8;
+  color: white;
+}
+
+#sbmBtn{
+  margin-left: 205px;
+}
+
+.sortBtn{
+  margin-top: 15px;
+  margin-left: 20px;
+  width: 230px;
+  color: white;
+}
+
+img{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:80px;
+  margin:auto;
+}
+
+#outMsg{
+  margin-top: 20px;
+  display: table;
+  margin: 0 auto;
+  color: #0275D8;
+}

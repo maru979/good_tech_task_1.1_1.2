@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+    <title>Новая заявка</title>
+</head>
+<body>
+  <div class="topnav">
+      <a class="active" href="index.html">Домашняя</a>
+      <a href="table.php">Таблица заявок</a>
+  </div>
+<div id="errors">
+    <ul id="errors"></ul>
+</div>
+  <div id="main">
+    <form>
+    <table>
+      <caption>Заявка</caption>
+      <tr>
+        <td>
+          <label for="username">Фамилия:*</label>
+        </td>
+        <td>
+          <input type="text" id="username" name="username" maxlength="12">
+          <div id="username_error" class="errorMsg"> </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="email">Адрес электронной почты:</label>
+        </td>
+        <td>
+          <input type="text" id="email" name="email">
+          <div id="email_error" class="errorMsg"> </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="mob">Номер телефона:*</label>
+        </td>
+        <td>
+          <input type="text" id="mob" name="mob" maxlength="12">
+          <div id="mob_error" class="errorMsg"> </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="bday">Дата рождения:*</label>
+        </td>
+        <td>
+          <input type="date" id="bday" name="bday" min="1900-01-01" max="2019-09-07">
+          <div id="bday_error" class="errorMsg"> </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Марка авто:*</label>
+        </td>
+        <td>
+          <select id="selectAuto" name="selectAuto">
+            <option selected disabled></option>
+            <option value="audi">Audi</option>
+            <option value="ford">Ford</option>
+            <option value="honda">Honda</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="wolkswagen">Wolkswagen</option>
+          </select>
+          <div id="selectAuto_error" class="errorMsg"> </div>
+        </td>
+      </tr>
+    </table>
+    </form>
+    <button type="submit" id ="sbmBtn" onclick="validate()">Отправить</button><br>
+  </div> 
+  <h4 id="outMsg"></h4>
+</body>
+</html>
