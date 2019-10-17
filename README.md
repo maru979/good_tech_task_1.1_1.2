@@ -1,4 +1,4 @@
 ## Дополнение
-[Адрес](http://w95862lu.beget.tech) проекта на хостинге beget.
+[Адрес](http://http://crm.w95862lu.beget.tech) проекта на хостинге beget.
 
 
